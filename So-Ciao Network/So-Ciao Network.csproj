@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChatBoxForm.aspx" />
-    <Content Include="LoginSetupForm.aspx" />
     <Content Include="MainFeedForm.aspx" />
     <Content Include="ProfileForm.aspx" />
     <Content Include="SettingForm.aspx" />
@@ -81,13 +80,6 @@
     </Compile>
     <Compile Include="ChatBoxForm.aspx.designer.cs">
       <DependentUpon>ChatBoxForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginSetupForm.aspx.cs">
-      <DependentUpon>LoginSetupForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginSetupForm.aspx.designer.cs">
-      <DependentUpon>LoginSetupForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainFeedForm.aspx.cs">
       <DependentUpon>MainFeedForm.aspx</DependentUpon>
