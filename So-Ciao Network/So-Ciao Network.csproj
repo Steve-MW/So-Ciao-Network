@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChatBoxForm.aspx" />
+    <Content Include="gaba.aspx" />
     <Content Include="LoginSetupForm.aspx" />
     <Content Include="MainFeedForm.aspx" />
     <Content Include="ProfileForm.aspx" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="ChatBoxForm.aspx.designer.cs">
       <DependentUpon>ChatBoxForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gaba.aspx.cs">
+      <DependentUpon>gaba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gaba.aspx.designer.cs">
+      <DependentUpon>gaba.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginSetupForm.aspx.cs">
       <DependentUpon>LoginSetupForm.aspx</DependentUpon>
