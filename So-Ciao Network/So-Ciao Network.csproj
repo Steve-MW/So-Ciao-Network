@@ -67,50 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ChatBoxForm.aspx" />
-    <Content Include="LoginSetupForm.aspx" />
-    <Content Include="MainFeedForm.aspx" />
-    <Content Include="ProfileForm.aspx" />
-    <Content Include="SettingForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChatBoxForm.aspx.cs">
-      <DependentUpon>ChatBoxForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ChatBoxForm.aspx.designer.cs">
-      <DependentUpon>ChatBoxForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginSetupForm.aspx.cs">
-      <DependentUpon>LoginSetupForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginSetupForm.aspx.designer.cs">
-      <DependentUpon>LoginSetupForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MainFeedForm.aspx.cs">
-      <DependentUpon>MainFeedForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MainFeedForm.aspx.designer.cs">
-      <DependentUpon>MainFeedForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProfileForm.aspx.cs">
-      <DependentUpon>ProfileForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProfileForm.aspx.designer.cs">
-      <DependentUpon>ProfileForm.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SettingForm.aspx.cs">
-      <DependentUpon>SettingForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SettingForm.aspx.designer.cs">
-      <DependentUpon>SettingForm.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
