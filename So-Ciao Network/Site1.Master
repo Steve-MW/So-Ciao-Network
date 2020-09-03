@@ -1,0 +1,240 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="So-Ciao.Master.cs" Inherits="So_Ciao_Network.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>So-Ciao</title>
+    <link rel="stylesheet" href="MasterStyle.css">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <style type="text/css">
+        .auto-style1 {
+            background: #ffffff;
+            width: 540px;
+            height: 458px;
+            position: relative;
+            margin-top: 5%;
+            box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+            left: 64px;
+            top: 51px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+         <div>
+            <div class="auto-style1">
+                <div class="leftbox">
+                    <nav>
+                        <a onclick="tabs(0)" 
+                            class="tab ">
+                             <i style='font-size:20px' class='fas'>&#xf2b9;</i>
+                        </a>
+                         <a onclick="tabs(1)" 
+                            class="tab ">
+                             <i style='font-size:20px' class='fas'>&#xf023;</i>
+                        </a>
+                         <a onclick="tabs(2)" 
+                            class="tab">
+                             <i style='font-size:20px' class='fas'>&#xf305;</i>
+                        </a>
+                         <a onclick="tabs(3)" 
+                            class="tab">
+                             <i style="font-size:20px" class="fa">&#xf185;</i>
+                        </a>
+                         <a onclick="tabs(4)" 
+                            class="tab">
+                            <i style="font-size:20px" class="fa">&#xf0a5;</i>
+                        </a>
+                         <a onclick="tabs(5)" 
+                            class="tab">
+                            <i style='font-size:20px' class='fas'>&#xf011;</i>
+                        </a>
+
+                    </nav>
+                </div>
+                <div class="rightbox">
+                    <div class="profile tabshow">
+                        <h1>personal settings</h1>
+                        <h2>User Name</h2>
+                   
+                       <%-- <input type="text" id="usertextbox"class="input" value="" name="textbox1" />--%>
+                        <asp:TextBox ID="TextBox1" runat="server" class="input"  ></asp:TextBox>
+                       
+                        <h2>Nick Name</h2>
+                      
+                          <asp:TextBox ID="TextBox2" runat="server" class="input"></asp:TextBox>
+                        <h2>Bio</h2>
+                       
+                             <asp:TextBox ID="TextBox3" runat="server" class="input"></asp:TextBox>
+                        <h2>Phone</h2>
+                         <asp:TextBox ID="TextBox7" runat="server" class="input"></asp:TextBox>
+                      
+                       <%-- <button class="button1">update</button>--%>
+                        <asp:Button ID="Button1" OnClick="Button1_Click" runat="server" Text="Update" class="button1" />
+                    </div>
+                     <div class="security tabshow">
+                        <h1>security settings</h1>
+                        <h2>Current Password</h2>
+                        <asp:TextBox ID="TextBox4" TextMode="Password"  runat ="server" class="input"></asp:TextBox>
+                         <br />
+                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Font-Size="Small" ForeColor="Red" ControlToValidate="TextBox4" ErrorMessage="*Enter current password"></asp:RequiredFieldValidator>
+                        <h2>New Password</h2>
+
+                          <asp:TextBox ID="TextBox5" TextMode="Password" runat="server" class="input"></asp:TextBox>
+                         <br />
+                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Font-Size="Small" ForeColor="Red" ControlToValidate="TextBox5" ErrorMessage="*Enter password"></asp:RequiredFieldValidator>
+                        <h2>Confirm Password</h2>
+                        <asp:TextBox ID="TextBox6" TextMode="Password" runat="server" class="input" ></asp:TextBox>   
+                         
+                       <asp:Button ID="Button2" OnClick="Button2_Click" runat="server" Text="update" class="button2" />
+                         <br />
+                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox5" ControlToValidate="TextBox6" Display="Dynamic" ForeColor="DarkRed" ErrorMessage="Password Mismatched"></asp:CompareValidator>
+                         
+                            
+                    </div> 
+                     <div class="Language tabshow">
+                        <h1>language settings</h1>
+                        <h2>English</h2>
+                        
+                        <h2>Hindi</h2>
+                        
+                        <h2>Malayalam</h2>
+                        
+                        
+                        <button class="button3">update</button>
+                            
+                    </div>  
+                     <div class="Theme  tabshow">
+                        <h1>Theme</h1>
+                        
+                       
+                            
+                    </div>
+                    <div class="Back to main feed  tabshow">
+                        <h1>Back to main feeds</h1>
+                        
+                       
+                            
+                    </div>
+                     <div class="logout  tabshow">
+                        <h1>LOG OUT</h1>
+                       
+                            
+                    </div>
+                </div>
+            </div> 
+            <script type="text/x-jquery-tmpl"></script>
+            <script type="text/javascript"></script>
+            <script>
+                const tabBtn = document.querySelectorAll(".tab");
+                const tab = document.querySelectorAll(".tabshow");
+
+                function tabs(panelIndex) {
+                    tab.forEach(function (node) {
+                        node.style.display = "none";
+                    });
+                    tab[panelIndex].style.display = "block";
+
+                }
+               
+                tabs(0);
+
+                $(".tab").click(function () {
+                    $(this).addclass("").siblin
+                    gs().removeclass("active");
+                });
+            </script>
+            <script src="validate.js"></script>
+         
+             
+        </div>
+
+    <!--wrapper start-->
+    <div class="wrapper">
+        <!--header menu start-->
+        <div class="header">
+            <div class="header-menu">
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header menu end-->
+        <!--sidebar start-->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                        <img src="1.jpg" alt="" >
+                        <p>Calvin</p>
+                    </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-desktop"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-user-circle"></i><span>Profile</span>
+                    </a>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#messages" class="menu-btn">
+                        <i class="fas fa-envelope"></i><span>Messages</span>
+                    </a>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#settings" class="menu-btn">
+                        <i class="fas fa-cog"></i><span>Settings </span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-info-circle"></i><span>About</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <!--sidebar end-->
+        <!--main container start-->
+        <div class="main-container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+            <%-- <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>--%>
+        </div>
+        <!--main container end-->
+
+    </div>
+    <!--wrapper end-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sidebar-btn").click(function () {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script>
+
+    </form>
+
+</body>
+
+</html> 
