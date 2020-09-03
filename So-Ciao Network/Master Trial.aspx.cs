@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace So_Ciao_Network
 {
-    public partial class ProfileForm : System.Web.UI.Page
+    public partial class Master_Trial : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
