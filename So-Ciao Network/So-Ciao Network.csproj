@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChatBoxForm.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="images\image4.jpg" />
+    <Content Include="Login.aspx" />
     <Content Include="MainFeedForm.aspx" />
     <Content Include="ProfileForm.aspx" />
     <Content Include="SettingForm.aspx" />
@@ -80,6 +83,13 @@
     </Compile>
     <Compile Include="ChatBoxForm.aspx.designer.cs">
       <DependentUpon>ChatBoxForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainFeedForm.aspx.cs">
       <DependentUpon>MainFeedForm.aspx</DependentUpon>
@@ -113,6 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
