@@ -1,0 +1,45 @@
+﻿$grey: #eee;
+
+body {
+    background-image: url("https://unsplash.com/photos/4pvfpUkmR6I");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+
+}
+
+.container{
+    margin: 60px auto;
+    background: #fff;
+    padding: 0;
+    border-radius:7px;
+
+}
+
+.profile-image{
+    width:50px;
+    height:50px;
+    border-radius:25px;
+
+}
+
+.settings-tray{
+    background: $grey
+   padding-box: 10px 15px;
+    border-radius:7px;
+}
+
+i{
+   margin-top: 10px;
+   font-size:25px;
+   color: grey;
+   margin-left: 14px;
+   transition: .3s;
+
+
+    &:hover{
+    color: steelblue;
+    cursor: pointer;
+
+    }
+}
