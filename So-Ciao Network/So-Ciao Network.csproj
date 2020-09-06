@@ -70,6 +70,7 @@
     <Content Include="ChatBoxForm.aspx" />
     <Content Include="css\style.css" />
     <Content Include="images\image4.jpg" />
+    <Content Include="js\script.js" />
     <Content Include="Login.aspx" />
     <Content Include="MainFeedForm.aspx" />
     <Content Include="ProfileForm.aspx" />
