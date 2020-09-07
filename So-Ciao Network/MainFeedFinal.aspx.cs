@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace So_Ciao_Network
 {
-    public partial class SettingForm : System.Web.UI.Page
+    public partial class MainFeedFinal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
