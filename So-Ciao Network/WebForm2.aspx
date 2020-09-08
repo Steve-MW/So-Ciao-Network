@@ -39,12 +39,13 @@
     <link rel='stylesheet prefetch'
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
     <style class="cp-pen-styles">
+
         body {
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background: #27ae60;
+            background: rgb(4, 35, 48);
             font-family: "proxima-nova", "Source Sans Pro", sans-serif;
             font-size: 1em;
             letter-spacing: 0.1px;
@@ -53,6 +54,29 @@
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
             -webkit-font-smoothing: antialiased;
         }
+
+    .myButton {
+	background-color:transparent;
+	border:2px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"proxima-nova", "Source Sans Pro", sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 76px;
+	text-decoration:none;
+
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+      
 
         #create{
             margin-left: 20px;
@@ -844,7 +868,7 @@
 
 
 <body>
-   <%-- <div class="createBlock">
+    <%--<div class="createBlock">
         <a href=#>Add contacts</a>
     </div>--%>
     <%--<form id="form1" runat="server">--%>
@@ -878,6 +902,10 @@
                     <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
                     <input type="text" placeholder="Search Friends..." />
                 </div>
+            <div id="add-chat">
+                <a href="#" class="myButton">start converstaion</a>
+
+            </div>
             <div id="contacts">
                 <ul class="addBlock">
                     <%--<li class="contact">
@@ -978,7 +1006,7 @@
         <div class="content">
             <div class="contact-profile">
                 <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                <p>Harvey Specter</p>
+                <p>Steve Waltin</p>
                
             </div>
             <div class="messages">

@@ -1,0 +1,129 @@
+﻿body {
+    font-family: tohama;
+    font-size: 15px;
+    line-height: 1.75px;
+    margin: 0;
+    padding: 0;
+}
+
+.Timeline {
+    display: flex;
+    background: #064a7a;
+}
+
+    .Timeline :hover .item {
+        width: 23.3333%;
+    }
+
+.item {
+    transform: translate3d(0,0,0);
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    min-height: 600px;
+    color: white;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+    .item:before, .item:after {
+        transform: translate3d(0,0,0);
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item:after {
+        /* background: rgb(21, 126, 2019, 0.85); */
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    .item:before {
+        /*background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%;*/
+        z-index: 1;
+        opacity: 0;
+        transform: translate3d(0,0,0) translateY(50%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .item:hover {
+        width: 30% !important; /*//not sure about the width because of 5 pics*/
+    }
+
+        .item:hover.content {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.75s ease 0.5s;
+        }
+
+        .item:hover .bg {
+            filter: grayscale(0);
+        }
+
+.content {
+    transform: translate3d(0,0,0), translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 70%;
+    opacity: 0;
+}
+
+    .content h1 {
+        font-family: Tahoma;
+        text-transform: uppercase;
+        color: deepskyblue;
+        font-size: 1.44rem;
+        font-weight: normal;
+    }
+
+    .content p {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+.year {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+    .year p {
+        font-family: Tahoma;
+        line-height: 0;
+        font-weight: 1.728rem;
+    }
+
+.bg {
+    transform: translate3d(0,0,0);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+}
+
+p {
+    font-family: Tahoma;
+    font-weight: normal;
+}
