@@ -27,6 +27,7 @@ body {
     color: #262626;
     padding-bottom: 3rem;
 background: -webkit-linear-gradient(left, #0c0101, #0c95c8);
+
 }
 img {
     display: block;
@@ -482,7 +483,7 @@ Profile Section
                 <div class="profile-stats">
                     <ul>
                         <li><span class="profile-stat-count">
-                            <asp:Label ID="Label5" runat="server" ForeColor="White"  Text="6"></asp:Label></span>posts</li>
+                            <asp:Label ID="Label5" runat="server" ForeColor="White"  Text="6"></asp:Label></span> posts</li>
                         <li><span class="profile-stat-count">
                             <asp:Label ID="Label6" runat="server" ForeColor="White"  Text="4"></asp:Label></span>close friends</li>
                     </ul>

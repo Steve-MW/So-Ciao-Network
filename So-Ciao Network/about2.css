@@ -1,0 +1,136 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    font-size: 16px;
+    line-height: 1.75;
+}
+.aboutWrapper{
+    margin:0;
+    background-color:blue;
+
+
+
+
+}
+
+.timeline {
+    display: flex;
+    background-color: #031725;
+}
+
+    .timeline:hover .aboutitem {
+        width: 20%;
+    }
+
+.aboutitem {
+    transform: translate3d(0,0,0);
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color: white;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+    .aboutitem:before, .aboutitem:after {
+        transform: translate3d(0,0,0);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutitem:after {
+        background: rgba(21,126,209,0.85);
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    .aboutitem:before {
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 75%);
+        z-index: 1;
+        opacity: 0;
+        transform: translate3d(0,0,0) translateY(50%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .aboutitem:hover {
+        width: 30% !important;
+    }
+
+        .aboutitem:hover .content {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.75s ease 0.5s;
+        }
+
+        .aboutitem:hover .bg {
+            filter: grayscale(0);
+        }
+
+        .aboutitem:hover::after {
+            background: transparent;
+        }
+
+.content {
+    transform: translate3d(0,0,0), translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618rem;
+    top: 55%;
+    opacity: 0;
+}
+
+    .content h1 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.44rem;
+        font-weight: normal;
+    }
+
+    .content p {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+.year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%), translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+    .year p {
+        font-family: tahoma;
+        font-size: 1.728rem;
+        line-height: 0;
+    }
+
+.bg {
+    transform: translate3d(0,0,0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(1);
+}
+
+p {
+    font-family: tahoma;
+    font-weight: normal;
+    font-size: 20px;
+}

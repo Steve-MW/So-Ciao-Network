@@ -30,7 +30,7 @@
             </div>
             <div class="data">
               <div class="content">
-                <span class="author">Steve Waltin</span>
+                <span class="create">Steve Waltin</span>
                 <h1 class="title"><a href="#">Tenkasi, a blissfull getaway from the rush of the urban lands.</a></h1>
                 <p class="text">Sundarapandiapuram has been on my list of must-see places ever since I saw a travelogue
                   featuring this rustic village with its fields of sunflowers, a much-photographed sight. While it isn’t
