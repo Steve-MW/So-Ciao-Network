@@ -70,7 +70,10 @@
     <Content Include="2.jpg" />
     <Content Include="MainFeedFinal.aspx" />
     <Content Include="MainFeedFinal.css" />
+    <Content Include="post2.jpg" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
+    <Content Include="MainFeed.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainFeedFinal.aspx.cs">
@@ -81,9 +84,24 @@
       <DependentUpon>MainFeedFinal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MainFeed.aspx.cs">
+      <DependentUpon>MainFeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainFeed.aspx.designer.cs">
+      <DependentUpon>MainFeed.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Site2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
