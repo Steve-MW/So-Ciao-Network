@@ -11,6 +11,21 @@ namespace So_Ciao_Network
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int sessionVar = 1011;
+            userEntity newObj = new userEntity();
+            DAL newDal = new DAL();
+            newObj = newDal.getdetails(sessionVar);
+
+            Label1.Text = newObj.empName;
+            Label2.Text = newObj.designation;
+            Label3.Text = newObj.email;
+            Label4.Text = newObj.username;
+            Label5.Text = newObj.no_of_posts.ToString();
+            Label6.Text = newObj.no_of_frnds.ToString();
+            Label7.Text = newObj.bio;
+            Label8.Text = newObj.phoneNumber;
+
+
 
         }
 
