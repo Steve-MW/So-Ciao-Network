@@ -252,7 +252,7 @@ h2 {
 
                    function tas() {
 
-                       location.href = "/WebForm2.aspx";
+                       location.href = "mainfeed.aspx";
 
                    }
 

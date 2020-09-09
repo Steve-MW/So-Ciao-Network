@@ -548,7 +548,7 @@
                 display: none;
             }
         }
-        #frame .conte {
+        #frame .content {
             float: right;
             width:1215px;
             height: 91vh;
@@ -556,45 +556,45 @@
             position: relative;
         }
         @media screen and (max-width: 735px) {
-            #frame .conte {
+            #frame .content {
                 width: calc(100% - 58px);
                 min-width: 300px !important;
             }
         }
         @media screen and (min-width: 900px) {
-            #frame .conte {
+            #frame .content {
                 width: calc(100% - 340px);
             }
         }
-        #frame .conte .contact-profile {
+        #frame .content .contact-profile {
             width: 100%;
             height: 60px;
             line-height: 60px;
             background: #f5f5f5;
         }
-        #frame .conte .contact-profile img {
+        #frame .content .contact-profile img {
             width: 40px;
             border-radius: 50%;
             float: left;
             margin: 9px 12px 0 9px;
         }
-        #frame .conte .contact-profile p {
+        #frame .content .contact-profile p {
             float: left;
         }
-        #frame .conte .contact-profile .social-media {
+        #frame .content .contact-profile .social-media {
             float: right;
         }
-        #frame .conte .contact-profile .social-media i {
+        #frame .content .contact-profile .social-media i {
             margin-left: 14px;
             cursor: pointer;
         }
-        #frame .conte .contact-profile .social-media i:nth-last-child(1) {
+        #frame .content .contact-profile .social-media i:nth-last-child(1) {
             margin-right: 20px;
         }
-        #frame .conte .contact-profile .social-media i:hover {
+        #frame .content .contact-profile .social-media i:hover {
             color: #435f7a;
         }
-        #frame .conte .messages {
+        #frame .content .messages {
             height: auto;
             min-height: calc(100% - 93px);
             max-height: calc(100% - 93px);
@@ -602,18 +602,18 @@
             overflow-x: hidden;
         }
         @media screen and (max-width: 735px) {
-            #frame .conte .messages {
+            #frame .content .messages {
                 max-height: calc(100% - 105px);
             }
         }
-        #frame .conte .messages::-webkit-scrollbar {
+        #frame .content .messages::-webkit-scrollbar {
             width: 8px;
             background: transparent;
         }
-        #frame .conte .messages::-webkit-scrollbar-thumb {
+        #frame .content .messages::-webkit-scrollbar-thumb {
             background-color: rgba(0, 0, 0, 0.3);
         }
-        #frame .conte .messages ul li {
+        #frame .content .messages ul li {
             display: inline-block;
             clear: both;
             float: left;
@@ -622,30 +622,30 @@
             font-size: 0.9em;
         }
         
-        #frame .conte .messages ul li:nth-last-child(1) {
+        #frame .content .messages ul li:nth-last-child(1) {
             margin-bottom: 20px;
         }
-        #frame .conte .messages ul li.sent img {
+        #frame .content .messages ul li.sent img {
             margin: 6px 8px 0 0;
         }
-        #frame .conte .messages ul li.sent p {
+        #frame .content .messages ul li.sent p {
             background: #435f7a;
             color: #f5f5f5;
         }
-        #frame .conte .messages ul li.replies img {
+        #frame .content .messages ul li.replies img {
             float: right;
             margin: 6px 0 0 8px;
         }
-        #frame .conte .messages ul li.replies p {
+        #frame .content .messages ul li.replies p {
             background: #f5f5f5;
             float: right;
         }
-        #frame .conte .messages ul li img {
+        #frame .content .messages ul li img {
             width: 22px;
             border-radius: 50%;
             float: left;
         }
-        #frame .conte .messages ul li p {
+        #frame .content .messages ul li p {
             display: inline-block;
             padding: 10px 15px;
             border-radius: 20px;
@@ -653,11 +653,11 @@
             line-height: 130%;
         }
         @media screen and (min-width: 735px) {
-            #frame .conte .messages ul li p {
+            #frame .content .messages ul li p {
                 max-width: 300px;
             }
         }
-        #frame .conte .message-input {
+        #frame .content .message-input {
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -666,7 +666,7 @@
         #frame .conte .message-input .wrap {
             position: relative;
         }
-        #frame .conte .message-input .wrap input {
+        #frame .content .message-input .wrap input {
             font-family: "proxima-nova", "Source Sans Pro", sans-serif;
             float: left;
             border: none;
@@ -676,14 +676,14 @@
             color: #32465a;
         }
         @media screen and (max-width: 735px) {
-            #frame .conte .message-input .wrap input {
+            #frame .content .message-input .wrap input {
                 padding: 15px 32px 16px 8px;
             }
         }
-        #frame .conte .message-input .wrap input:focus {
+        #frame .content .message-input .wrap input:focus {
             outline: none;
         }
-        #frame .conte .message-input .wrap .attachment {
+        #frame .content .message-input .wrap .attachment {
             position: absolute;
             right: 60px;
             z-index: 4;
@@ -694,15 +694,15 @@
             cursor: pointer;
         }
         @media screen and (max-width: 735px) {
-            #frame .conte .message-input .wrap .attachment {
+            #frame .content .message-input .wrap .attachment {
                 margin-top: 17px;
                 right: 65px;
             }
         }
-        #frame .conte .message-input .wrap .attachment:hover {
+        #frame .content .message-input .wrap .attachment:hover {
             opacity: 1;
         }
-        #frame .conte .message-input .wrap button {
+        #frame .content .message-input .wrap button {
             float: right;
             border: none;
             width: 50px;
@@ -712,14 +712,14 @@
             color: #f5f5f5;
         }
         @media screen and (max-width: 735px) {
-            #frame .conte .message-input .wrap button {
+            #frame .content .message-input .wrap button {
                 padding: 16px 0;
             }
         }
-        #frame .conte .message-input .wrap button:hover {
+        #frame .content .message-input .wrap button:hover {
             background: #435f7a;
         }
-        #frame .conte .message-input .wrap button:focus {
+        #frame .content .message-input .wrap button:focus {
             outline: none;
         }
     </style>
@@ -735,8 +735,8 @@
         <div id="sidepanel">
             <div id="profile">
                 <div class="wrap">
-                    <img id="profile-img" src="http://emilcarlsson.se/assets/mikeross.png" class="online" alt="" />
-                    <p>Mike Ross</p>
+                    <img id="profile-img" src="https://picsum.photos/130/130?image=836" class="online" alt="" />
+                    <p>Aanchal Kaur</p>
                  <!--   <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
                     <div id="status-options">
                         <ul>
@@ -757,10 +757,10 @@
                    
                 </div>
             </div>
-           <div class="container">
+          <%-- <div class="container">
   <input type="text" placeholder="Search your Friend">
   <div class="search"></div>
-</div>
+</div>--%>
             <div id="contacts">
                 <ul class="addBlock">
                     <%--<li class="contact">
@@ -848,7 +848,7 @@
                         <div class="wrap">
                             
                             <img src="http://emilcarlsson.se/assets/jonathansidwell.png" alt="" />
-                            <div class="meta">
+                            <div class="meta">https://picsum.photos/130/130?image=836
                                 <p class="name">Jonathan Sidwell</p>
                                 <p class="preview"><span>You:</span> That's bullshit. This deal is solid.</p>
                             </div>
@@ -858,47 +858,46 @@
             </div>
            
         </div>
-        <div class="conte">
+        <div class="content">
             <div class="contact-profile">
-                <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                <p>Harvey Specter</p>
+                <img src="https://picsum.photos/130/130?image=1027" alt="" />
+                <p>Tanisha Gaba</p>
                
             </div>
             <div class="messages">
                 <ul>
                     <li class="sent">
-                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-                        <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!
+                        <img src="https://picsum.photos/130/130?image=836" alt="" />
+                        <p>hi...
                         </p>
                     </li>
                     <li class="replies">
-                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                        <p>When you're backed against the wall, break the god damn thing down.</p>
+                        <img src="https://picsum.photos/130/130?image=1027" alt="" />
+                        <p>hello aanchal...</p>
                     </li>
                     <li class="replies">
-                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                        <p>Excuses don't win championships.</p>
+                        <img src="https://picsum.photos/130/130?image=1027" alt="" />
+                        <p>long time...</p>
                     </li>
                     <li class="sent">
-                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-                        <p>Oh yeah, did Michael Jordan tell you that?</p>
+                        <img src="https://picsum.photos/130/130?image=836" alt="" />
+                        <p>yeaahh....was little busy with work...</p>
                     </li>
                     <li class="replies">
-                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                        <p>No, I told him that.</p>
+                        <img src="https://picsum.photos/130/130?image=1027" alt="" />
+                        <p>same here manhh...</p>
                     </li>
                     <li class="replies">
-                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                        <p>What are your choices when someone puts a gun to your head?</p>
+                        <img src="https://picsum.photos/130/130?image=1027" alt="" />
+                        <p>all good??</p>
                     </li>
                     <li class="sent">
-                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-                        <p>What are you talking about? You do what they say or they shoot you.</p>
+                        <img src="https://picsum.photos/130/130?image=836" alt="" />
+                        <p>yyeahhh...</p>
                     </li>
                     <li class="replies">
-                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                        <p>Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do
-                            any one of a hundred and forty six other things.</p>
+                        <img src="https://picsum.photos/130/130?image=1027" alt="" />
+                        <p>so..can we catch up this weekend??</p>
                     </li>
                 </ul>
             </div>
@@ -914,7 +913,7 @@
     <%--<script type="text/javascript">
         (function () {
             $(".createBlock").click(function () {
-                $(".addBlock").append('<li class="contact"><div class="wrap"><img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" /> <div class="meta"><p class="name">Arthy</p><p class="preview">Hi</p></div></div></li>');
+                $(".addBlock").append('<li class="contact"><div class="wrap"><img src="https://picsum.photos/130/130?image=1027" alt="" /> <div class="meta"><p class="name">Arthy</p><p class="preview">Hi</p></div></div></li>');
             });
         })();
     </script>--%>
@@ -923,7 +922,7 @@
         function codeAddress() {
             var friendChat = "<%= recvUser %>"
             var friendPreview = "<%= messageText%>"
-            $(".addBlock").append('<li class="contact"><div class="wrap"><img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" /> <div class="meta"><p class="name">' + friendChat + '</p><p class="preview">' + friendPreview + '</p ></div ></div ></li > ');
+            $(".addBlock").append('<li class="contact"><div class="wrap"><img src="https://picsum.photos/130/130?image=1027" alt="" /> <div class="meta"><p class="name">' + friendChat + '</p><p class="preview">  so..can we catch up this weekend ??  </p ></div ></div ></li > ');
            
             
         }
@@ -965,7 +964,7 @@
             if ($.trim(message) == '') {
                 return false;
             }
-            $('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+            $('<li class="sent"><img src="https://picsum.photos/130/130?image=836" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
             $('.message-input input').val(null);
             $('.contact.active .preview').html('<span>You: </span>' + message);
             $(".messages").animate({ scrollTop: $(document).height() }, "fast");

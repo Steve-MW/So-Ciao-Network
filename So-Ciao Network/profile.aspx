@@ -26,6 +26,7 @@ body {
     background-color: #fafafa;
     color: #262626;
     padding-bottom: 3rem;
+background: -webkit-linear-gradient(left, #0c0101, #0c95c8);
 }
 img {
     display: block;
@@ -456,34 +457,34 @@ Profile Section
                             <img src="pics/opp.jpg" alt="Avatar" style="width:170px;height:170px;">
                         </div>
                         <div class="flip-card-back">
-                            <h1>
-                                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h1>
+                            <h2>
+                                <asp:Label ID="Label1" runat="server" Text="Aanchal kaur"></asp:Label></h2>
                             <p>
-                                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></p>
+                                <asp:Label ID="Label2" runat="server" Text="Web developer"></asp:Label></p>
                             <p>
-                                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></p>
+                                <asp:Label ID="Label3" runat="server" Text="ak@gmail.com"></asp:Label></p>
                         </div>
                     </div>
                 </div>
                 <div class="profile-user-settings">
                     <h1 class="profile-user-name">
                         &nbsp;
-                        <asp:Label ID="Label4" runat="server" Text="Steve waltin"></asp:Label></h1>
+                        <asp:Label ID="Label4" runat="server"  Text="Aanchal Kaur"></asp:Label></h1>
 
                     <br />
                    
                     <asp:Button ID="Button1" class="profile-edit-btn" runat="server" Text="Edit Profile" OnClick="Button1_Click" />
                     <div class="changes"><p><span <%--class="changes"--%>>
                          
-                    <asp:Label ID="Label7" runat="server"  CssClass="change" Text="hello..."></asp:Label></span></p></div>
+                    <asp:Label ID="Label7" runat="server"  CssClass="change" Text="Welcome.."></asp:Label></span></p></div>
                 
                 </div>
                 <div class="profile-stats">
                     <ul>
                         <li><span class="profile-stat-count">
-                            <asp:Label ID="Label5" runat="server" Text="20"></asp:Label></span>posts</li>
+                            <asp:Label ID="Label5" runat="server" ForeColor="White"  Text="6"></asp:Label></span>posts</li>
                         <li><span class="profile-stat-count">
-                            <asp:Label ID="Label6" runat="server" Text="23"></asp:Label></span>close friends</li>
+                            <asp:Label ID="Label6" runat="server" ForeColor="White"  Text="4"></asp:Label></span>close friends</li>
                     </ul>
                 </div>
             

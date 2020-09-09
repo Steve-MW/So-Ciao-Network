@@ -18,60 +18,60 @@ namespace So_Ciao_Network
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (!this.IsPostBack)
+            //if (!this.IsPostBack)
 
-            {
-                Label1.Visible = false;
+            //{
+            //    Label1.Visible = false;
 
-                TextBox8.Text = Session["employeeID"].ToString();
-                Session.Remove("employeeID");
+                //TextBox8.Text = Session["employeeID"].ToString();
+                //Session.Remove("employeeID");
 
-                { 
+                //{ 
 
-                    using (con)
+            //        using (con)
 
-                    {
+            //        {
 
-                        TextBox8.Enabled = false;
-                        TextBox8.BorderColor = Color.Blue;
-                        TextBox8.ForeColor = Color.Black;
-                        SqlCommand cmd = new SqlCommand("SELECT userName, emailID,  description ,phoneNumber FROM UserTable WHERE employeeID =@employeeID");
-                        cmd.Parameters.AddWithValue("@employeeID", TextBox8.Text);
+            //            TextBox8.Enabled = false;
+            //            TextBox8.BorderColor = Color.Blue;
+            //            TextBox8.ForeColor = Color.Black;
+            //            SqlCommand cmd = new SqlCommand("SELECT userName, emailID,  description ,phoneNumber FROM UserTable WHERE employeeID =@employeeID");
+            //            cmd.Parameters.AddWithValue("@employeeID", TextBox8.Text);
 
 
-                        cmd.CommandType = CommandType.Text;
+            //            cmd.CommandType = CommandType.Text;
 
-                        cmd.Connection = con;
+            //            cmd.Connection = con;
 
-                        con.Open();
+            //            con.Open();
 
-                        SqlDataReader sdr = cmd.ExecuteReader();
+            //            SqlDataReader sdr = cmd.ExecuteReader();
 
-                        {
+            //            {
 
-                            sdr.Read();
+            //                sdr.Read();
 
-                            TextBox1.Text = sdr["userName"].ToString();
+            //                TextBox1.Text = sdr["userName"].ToString();
 
-                            TextBox2.Text = sdr["emailID"].ToString();
+            //                TextBox2.Text = sdr["emailID"].ToString();
 
-                            TextBox3.Text = sdr["description"].ToString();
-                            TextBox7.Text = sdr["phoneNumber"].ToString();
+            //                TextBox3.Text = sdr["description"].ToString();
+            //                TextBox7.Text = sdr["phoneNumber"].ToString();
                            
 
-                        }
+            //            }
 
-                        con.Close();
-                        TextBox1.Enabled = false;
-                        TextBox2.Enabled = false;
-                        TextBox3.Enabled = false;
-                        TextBox7.Enabled = false;
+            //            con.Close();
+            //            TextBox1.Enabled = false;
+            //            TextBox2.Enabled = false;
+            //            TextBox3.Enabled = false;
+            //            TextBox7.Enabled = false;
 
-                    }
+            //        }
 
-                }
+            //    }
 
-            }
+            //}
         }
 
 

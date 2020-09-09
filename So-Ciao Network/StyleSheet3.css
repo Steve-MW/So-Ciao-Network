@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
     font-family: "Open Sans", sans-serif;
+    background: -webkit-linear-gradient(left, #0c0101, #0c95c8);
 }
 
 a {
@@ -28,30 +30,33 @@ h1 {
 .Universe {
     display: flex;
     flex-direction: row;
-    background-color: blue;
+   /* background-color: blue;*/
 }
 
 .block {
     display: flex;
     flex-direction: column;
-    background-color: lightcoral ;
+    /*background-color: lightcoral ;*/
     width: 60%;
 }
 
 .row {
     max-width: 900px;
     margin: 50px 0px 0px 200px;
-    background-color: aqua;
+    /*background-color: aqua;*/
+
+    background-color: transparent;
 }
 .example-2 card {
-    background-color: blueviolet;
+   /* background-color: blueviolet;*/
 }
 
 .card {
     float: left;
     padding: 0 1.7rem;
     width: 100%;
-    background-color: brown;
+    /*background-color: brown;*/
+    background-color: transparent;
 }
 
     .card .menu-content {
@@ -90,7 +95,7 @@ h1 {
 
     .card .wrapper2 {
         /*background-color: #fff;*/
-        background-color: red;
+       /* background-color: red;*/
         min-height: 540px;
         position: relative;
         overflow: hidden;
@@ -263,7 +268,7 @@ h1 {
 .example-2 .wrapper2 {
     background: url(post2.jpg) center/cover no-repeat;
     border-radius: 7px;
-    background-color: greenyellow;
+    /*background-color: greenyellow;*/
 }
 
     .example-2 .wrapper2:hover .menu-content span {

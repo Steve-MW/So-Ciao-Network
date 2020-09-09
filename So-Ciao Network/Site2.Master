@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <title>So-Ciao</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="StyleSheet4.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
@@ -36,31 +36,31 @@
         <div class="sidebar">
             <div class="sidebar-menu">
                 <center class="profile">
-                        <img src="2.jpg" alt="" >
-                        <p>Steve Waltin</p>
+                        <img src="https://picsum.photos/130/130?image=836" alt="" >
+                        <p>Aanchal Kaur</p>
                     </center>
                 <li class="item">
-                    <a href="#" class="menu-btn">
+                    <a href="mainfeed.aspx" class="menu-btn">
                         <i class="fas fa-desktop"></i><span>Dashboard</span>
                     </a>
                 </li>
-                <li class="item" id="profile">
-                    <a href="#profile" class="menu-btn">
+                <li class="item" id="profile" >
+                    <a href="profile.aspx" class="menu-btn">
                         <i class="fas fa-user-circle"></i><span>Profile</span>
                     </a>
                 </li>
                 <li class="item" id="messages">
-                    <a href="#messages" class="menu-btn">
+                    <a href="chat.aspx" class="menu-btn">
                         <i class="fas fa-envelope"></i><span>Messages</span>
                     </a>
                 </li>
                 <li class="item" id="settings">
-                    <a href="#settings" class="menu-btn">
+                    <a href="settings.aspx" class="menu-btn">
                         <i class="fas fa-cog"></i><span>Settings </span>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="menu-btn">
+                    <a href="about.aspx" class="menu-btn">
                         <i class="fas fa-info-circle"></i><span>About</span>
                     </a>
                 </li>

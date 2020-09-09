@@ -81,9 +81,9 @@ namespace So_Ciao_Network
                 if (rd.HasRows)
                 {
                     rd.Read();
-                System.Diagnostics.Debug.WriteLine("Aanchal output:"+TextBox1.Text);
-                Session["employeeID"] = TextBox1.Text;
-                Server.Transfer("settings.aspx");
+                Response.Redirect("mainfeed.aspx");
+                //Session["employeeID"] = TextBox1.Text;
+                //Server.Transfer("settings.aspx");
                 //Response.Redirect("webform4.aspx");
                 }
                 else
