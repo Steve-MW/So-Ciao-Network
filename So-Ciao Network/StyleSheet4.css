@@ -114,6 +114,7 @@ body {
                 padding: 25px 20px;
                 transition: 0.3s;
                 transition-property: color;
+                
             }
 
                 .wrapper .sidebar .sidebar-menu .item .menu-btn:hover {

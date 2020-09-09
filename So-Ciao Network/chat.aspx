@@ -920,8 +920,8 @@
 
     <script type="text/javascript">
         function codeAddress() {
-            var friendChat = "<%= recvUser %>"
-            var friendPreview = "<%= messageText%>"
+            var friendChat = <%--"<%= recvUser %>"--%> Tanisha Gaba
+            var friendPreview = <%--"<%= messageText%>"--%> Hi
             $(".addBlock").append('<li class="contact"><div class="wrap"><img src="https://picsum.photos/130/130?image=1027" alt="" /> <div class="meta"><p class="name">' + friendChat + '</p><p class="preview">  so..can we catch up this weekend ??  </p ></div ></div ></li > ');
            
             

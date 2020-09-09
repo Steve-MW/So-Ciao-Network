@@ -16,7 +16,9 @@ body {
     height: 100vh;
     font-family: "Open Sans", sans-serif;
     background: -webkit-linear-gradient(left, #0c0101, #0c95c8);
+    
 }
+
 
 a {
     text-decoration: none;
@@ -38,11 +40,12 @@ h1 {
     flex-direction: column;
     /*background-color: lightcoral ;*/
     width: 60%;
+
 }
 
 .row {
     max-width: 900px;
-    margin: 50px 0px 0px 200px;
+    margin: 35px 0px 0px 200px;
     /*background-color: aqua;*/
 
     background-color: transparent;
@@ -357,6 +360,10 @@ h1 {
     /* background-color: lightgreen; */
     /* padding: 10px; */
     /* justify-content: right; */
+    position:fixed;
+    /*z-index: 10;*/
+    right: 0px;
+
 }
 
 .our-team {
@@ -482,10 +489,14 @@ h1 {
 
 .our-team:hover .social {
     bottom: 0;
+
 }
+
+
 
 .our-team .social li {
     display: inline-block;
+    
 }
 
     .our-team .social li a {
