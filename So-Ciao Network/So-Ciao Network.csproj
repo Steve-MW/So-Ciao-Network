@@ -78,8 +78,8 @@
     <Content Include="images\Steve.JPG" />
     <Content Include="images\tani.jpg" />
     <Content Include="js\script.js" />
-    <Content Include="MainFeedFinal.aspx" />
-    <Content Include="MainFeedFinal.css" />
+    <Content Include="MainFeedTemp.aspx" />
+    <Content Include="MainFeedTemp.css" />
     <Content Include="1.jpg" />
     <Content Include="MasterStyle.css" />
     <Content Include="pics\.png" />
@@ -95,13 +95,13 @@
     <Content Include="post2.jpg" />
     <Content Include="StyleSheet1.css" />
     <Content Include="StyleSheet2.css" />
-    <Content Include="StyleSheet3.css" />
+    <Content Include="MainFeed.css" />
     <Content Include="StyleSheet4.css" />
     <Content Include="uploadDP.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="settings.aspx" />
-    <Content Include="mainfeed.aspx" />
+    <Content Include="MainFeed.aspx" />
     <Content Include="WebForm11.aspx" />
     <Content Include="WebForm12.aspx" />
     <Content Include="WebForm13.aspx" />
@@ -113,22 +113,24 @@
     <Content Include="WebForm9.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainFeedFinal.aspx.cs">
-      <DependentUpon>MainFeedFinal.aspx</DependentUpon>
+    <Compile Include="MainFeedTemp.aspx.cs">
+      <DependentUpon>MainFeedTemp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MainFeedFinal.aspx.designer.cs">
-      <DependentUpon>MainFeedFinal.aspx</DependentUpon>
+    <Compile Include="MainFeedTemp.aspx.designer.cs">
+      <DependentUpon>MainFeedTemp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site2.Master.cs">
       <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
     <Compile Include="Site3.Master.cs">
       <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site3.Master.designer.cs">
       <DependentUpon>Site3.Master</DependentUpon>
@@ -161,12 +163,12 @@
     <Compile Include="settings.aspx.designer.cs">
       <DependentUpon>settings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="mainfeed.aspx.cs">
-      <DependentUpon>mainfeed.aspx</DependentUpon>
+    <Compile Include="MainFeed.aspx.cs">
+      <DependentUpon>MainFeed.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="mainfeed.aspx.designer.cs">
-      <DependentUpon>mainfeed.aspx</DependentUpon>
+    <Compile Include="MainFeed.aspx.designer.cs">
+      <DependentUpon>MainFeed.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm11.aspx.cs">
       <DependentUpon>WebForm11.aspx</DependentUpon>

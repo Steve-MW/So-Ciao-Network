@@ -12,16 +12,16 @@ namespace So_Ciao_Network
 {
     public partial class WebForm6 : System.Web.UI.Page
     {
-        
-        
 
 
-            SqlConnection Con = new SqlConnection("Data Source=LAPTOP-AD6HQC8P;Initial Catalog=project1;Integrated Security=True");
+
+
+        SqlConnection Con = new SqlConnection("Data Source=DESKTOP-A4JGJGG\\SQLEXPRESS;Initial Catalog=Trial;Integrated Security=True");
         public int currUser = 1001;
         public int sendUserID, recvUserID;
         public string sendUser, recvUser;
         public string chatID, messageText;
-    
+
 
 
         protected void Page_Load(object sender, EventArgs e)
