@@ -36,8 +36,8 @@
         <div class="sidebar">
             <div class="sidebar-menu">
                 <center class="profile">
-                        <img src="https://picsum.photos/130/130?image=836" alt="" >
-                        <p>Aanchal Kaur</p>
+                        <img src="<%= DpDisplayString %>" alt="" >
+                        <p><%= employeeName %></p>
                     </center>
                 <li class="item">
                     <a href="mainfeed.aspx" class="menu-btn">

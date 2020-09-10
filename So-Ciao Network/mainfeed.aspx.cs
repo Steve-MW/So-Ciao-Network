@@ -17,14 +17,39 @@ namespace So_Ciao_Network
         DataSet userData = new DataSet();
         DataSet DpData = new DataSet();
         DataSet postData = new DataSet();
+        public string DpDisplayString;
+
+        //Post Variables: 
+
+        public string postDescription, postDate, postTme;
         protected void Page_Load(object sender, EventArgs e)
         {
-           
 
-            SqlDataAdapter newAdater = new SqlDataAdapter("select employeeName, designation from UserTable where employeeID = " + seshVar.ToString() , newConnect );
+            newConnect.Open();
+            SqlDataAdapter newAdater = new SqlDataAdapter("select employeeName, designation from UserTable where employeeID = " + seshVar.ToString(), newConnect);
             newAdater.Fill(userData);
             employeeName = userData.Tables[0].Rows[0].ItemArray[0].ToString();
             designation = userData.Tables[0].Rows[0].ItemArray[1].ToString();
+
+            SqlCommand DpRetrive = new SqlCommand("getDpByID", newConnect);
+            DpRetrive.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter Id = new SqlParameter()
+            {
+                ParameterName = "@Id",
+                Value = seshVar
+            
+            };
+            DpRetrive.Parameters.Add(Id);
+            byte[] Dp = (byte[])DpRetrive.ExecuteScalar();
+            string DpString64 = Convert.ToBase64String(Dp);
+
+            DpDisplayString = "data:Image/png;base64," + DpString64;
+
+
+
+
+            newConnect.Close();
         }
     }
 }

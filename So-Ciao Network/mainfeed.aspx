@@ -64,11 +64,11 @@
           <div class="col-12 col-sm-6 col-md-4 col-lg-3"> -->
             <div class="our-team">
                 <div class="picture">
-                    <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                    <img class="img-fluid" src="<%= DpDisplayString %>">
                 </div>
                 <div class="team-content">
-                    <h3 class="name"><%= employeeName %></h3>
-                    <h4 class="title"><%= designation %></h4>
+                    <h3 class="name" style="font-family: serif, didot, serif;"><%= employeeName %></h3>
+                    <h4 class="title" style="color:rgb(25, 23, 23); font-family: serif, didot, serif;"><%= designation %></h4>
                 </div>
                 <ul class="social">
                     <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>

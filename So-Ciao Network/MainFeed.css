@@ -374,7 +374,7 @@ h1 {
     margin-right: 400px;
     position: absolute;
     right: 0;
-    background-color: #f7f5ec;
+    background-color: rgba(195, 166, 145, 0.38);
     overflow: hidden;
     margin-bottom: 30px;
     border-radius: 20px;
