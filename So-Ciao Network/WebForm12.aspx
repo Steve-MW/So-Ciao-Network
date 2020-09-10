@@ -14,7 +14,7 @@
             <div class="content">
                  <h1>Steve Waltin</h1>
                         <p>
-                            Being a Team Leader is easy they say, But The Leasder is the one who makes everyone ahead 
+                            Being a Team Leader is easy they say, But The Leader is the one who makes everyone ahead 
                             and hustle in the back, making sure that things not only get done but has the quality result. 
                             He completes his tasks with perfection! From logics to design, management to assigning tasks.
                             If its about stored procedure and making things work he is HANDY MANNY! 

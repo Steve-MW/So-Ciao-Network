@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="profile.aspx.cs" Inherits="So_Ciao_Network.WebForm7" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
     <style> 
                  ﻿:root {
     font-size: 10px;
@@ -443,7 +443,19 @@ Profile Section
 
         </style>
       
-   
+   <script type="text/javascript">
+       function pictureLoad(){
+           var count = "<%= count %>"
+           var i
+           var list = "<%= ls %>"
+           
+           for (i = 0; i < count; i++) {
+               $(".gallery").append('<div class="gallery-item" tabindex="0"><img src="'+ls[i].picture+'" alt="Gallery-1" class="gallery-image" /><div class="galery-item-type"><span class="visually-hidden">Gallery</span></div><div class="gallery-item-info"> <ul>< li class= "gallery-item-likes" > <span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i>56</li ><li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i>2</li></ul ></div ></div >');
+               
+           }
+       }
+       window.onload = pictureLoad;
+   </script>
         <link rel="stylesheet" href="https://fonts.ggogleapis.com/css?family=Open+Sans:300,400,600" />
     <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.0.8/css/all.css" />
    <%-- <link href="StyleSheet2.css" rel="stylesheet" />--%>
@@ -455,7 +467,7 @@ Profile Section
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="pics/opp.jpg" alt="Avatar" style="width:170px;height:170px;">
+                            <img src="<%= profile%>" alt="Avatar" style="width:170px;height:170px;">
                         </div>
                         <div class="flip-card-back">
                             <h2>
@@ -473,7 +485,7 @@ Profile Section
                         <asp:Label ID="Label4" runat="server"  Text="Aanchal Kaur"></asp:Label></h1>
 
                     <br />
-                   
+                  
                     <asp:Button ID="Button1" class="profile-edit-btn" runat="server" Text="Edit Profile" OnClick="Button1_Click" />
                     <div class="changes"><p><span <%--class="changes"--%>>
                          
@@ -501,8 +513,8 @@ Profile Section
     <main>
         <div class="container">
             <div class="gallery">
-                <div class="gallery-item" tabindex="0">
-                    <img id="my_image" src="pics/333.jpg" alt="Gallery-1" class="gallery-image" />
+                <%--<div class="gallery-item" tabindex="0">
+                    <img id="my_image" src="" alt="Gallery-1" class="gallery-image" />
                     <div class="gallery-item-info">
                         <ul>
                             <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i>56</li>
@@ -573,15 +585,14 @@ Profile Section
                             <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i>2</li>
                         </ul>
                     </div>
-                </div>
+                </div>--%>
 
 
             </div>
         </div>
         <!--End og gallery-->
-        <div class="loader"></div>
     </main>
     </form>
-    </span>
+    
     
 </asp:Content>
