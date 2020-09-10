@@ -11,8 +11,9 @@ namespace So_Ciao_Network
 {
     public partial class Site2 : System.Web.UI.MasterPage
     {
-        SqlConnection newConnect = new SqlConnection(@"Data Source=DESKTOP-A4JGJGG\SQLEXPRESS;Initial Catalog=Trial;Integrated Security=True");
-            int seshVar = 1000;
+        //SqlConnection newConnect = new SqlConnection(@"Data Source=DESKTOP-A4JGJGG\SQLEXPRESS;Initial Catalog=Trial;Integrated Security=True");
+        SqlConnection newConnect = new SqlConnection("Data Source=ARTHYBHEL;Initial Catalog=So-Ciao;Integrated Security=True");
+        int seshVar = 1001;
         public string employeeName, designation;
         DataSet userData = new DataSet();
         DataSet DpData = new DataSet();

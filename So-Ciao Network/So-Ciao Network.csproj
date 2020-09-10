@@ -140,6 +140,7 @@
     <Compile Include="So-Ciao.Master.designer.cs">
       <DependentUpon>So-Ciao.Master</DependentUpon>
     </Compile>
+    <Compile Include="userEntity.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
