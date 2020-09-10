@@ -15,7 +15,7 @@ namespace So_Ciao_Network
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("WebForm12.aspx");
         }
     }
 }
