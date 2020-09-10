@@ -52,11 +52,38 @@ namespace So_Ciao_Network
             sendUser = newData4.Tables[0].Rows[0].ItemArray[0].ToString();
 
 
-
-
-
-
             Con.Close();
+
+
+            Con.Open();
+            SqlDataAdapter newAdapt1 = new SqlDataAdapter("Select chatID, employeeID, chatEmp from chatBox where employeeID = " + currUser.ToString(), Con);
+            DataSet newData1 = new DataSet();
+            newAdapt.Fill(newData);
+            // must do for each 
+            chatID = newData.Tables[0].Rows[1].ItemArray[0].ToString();
+            sendUserID = Convert.ToInt32(newData.Tables[0].Rows[0].ItemArray[1]);
+            recvUserID = Convert.ToInt32(newData.Tables[0].Rows[0].ItemArray[2]);
+
+            SqlDataAdapter newAdapt7 = new SqlDataAdapter("select messageText from messageList where chatID =" + chatID, Con);
+            DataSet newData7 = new DataSet();
+            newAdapt2.Fill(newData2);
+
+            messageText = newData2.Tables[0].Rows[0].ItemArray[0].ToString();
+
+            SqlDataAdapter newAdapt6 = new SqlDataAdapter("select userName from UserTable where employeeID =" + recvUserID.ToString(), Con);
+            DataSet newData46= new DataSet();
+            newAdapt3.Fill(newData3);
+            recvUser = newData3.Tables[0].Rows[0].ItemArray[0].ToString();
+
+            SqlDataAdapter newAdapt5 = new SqlDataAdapter("select userName from UserTable where employeeID =" + sendUserID.ToString(), Con);
+            DataSet newData5 = new DataSet();
+            newAdapt4.Fill(newData4);
+            sendUser = newData4.Tables[0].Rows[0].ItemArray[0].ToString();
+
+
+
+
+
         }
     }
 }

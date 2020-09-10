@@ -82,10 +82,11 @@ namespace So_Ciao_Network
                 {
                     rd.Read();
                 Response.Redirect("mainfeed.aspx");
+
                 //Session["employeeID"] = TextBox1.Text;
-                //Server.Transfer("settings.aspx");
+                //Server.Transfer("chat.aspx");
                 //Response.Redirect("webform4.aspx");
-                }
+            }
                 else
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Incorrect Employee ID or Password');</script>");
